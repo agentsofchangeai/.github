@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Agents of Change — core team constellation</title>
+  <desc id="desc">Seven core team members — Iris (Product Owner), Magnus (Scrum Master), Nova (Backend Developer), Lux (Frontend Developer), Talia (Requirements Engineer, Functional), Orion (Solution Architect) and Marlowe (Principal Software Engineering Reviewer) — orbiting the Agents of Change mission.</desc>
+
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.5" r="0.85">
+      <stop offset="0%" stop-color="#141d3d"/>
+      <stop offset="55%" stop-color="#0a1024"/>
+      <stop offset="100%" stop-color="#060914"/>
+    </radialGradient>
+    <radialGradient id="hubFill" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0%" stop-color="#1e2c5c"/>
+      <stop offset="80%" stop-color="#101a36"/>
+      <stop offset="100%" stop-color="#0c142c"/>
+    </radialGradient>
+    <linearGradient id="hubRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f0abfc"/>
+    </linearGradient>
+    <pattern id="dots" width="72" height="72" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="18" r="1" fill="#94a3b8" opacity="0.22"/>
+      <circle cx="48" cy="8" r="0.8" fill="#94a3b8" opacity="0.18"/>
+      <circle cx="62" cy="44" r="1.1" fill="#94a3b8" opacity="0.16"/>
+      <circle cx="24" cy="58" r="0.7" fill="#94a3b8" opacity="0.2"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .name  { font-family: "Segoe UI","DejaVu Sans",Helvetica,Arial,sans-serif; font-size: 21px; font-weight: 700; fill: #F8FAFC; }
+      .role  { font-family: "Segoe UI","DejaVu Sans",Helvetica,Arial,sans-serif; font-size: 13.5px; font-weight: 400; fill: #A5B4FC; }
+      .role2 { font-family: "Segoe UI","DejaVu Sans",Helvetica,Arial,sans-serif; font-size: 12px; font-weight: 400; fill: #94A3B8; }
+      .emoji { font-family: "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Segoe UI Symbol",sans-serif; font-size: 34px; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+
+  <!-- faint outer rings -->
+  <circle cx="800" cy="450" r="400" fill="none" stroke="rgba(148,163,184,0.12)" stroke-width="1.2" stroke-dasharray="2 14"/>
+  <circle cx="800" cy="450" r="290" fill="none" stroke="rgba(148,163,184,0.10)" stroke-width="1.2" stroke-dasharray="1 10"/>
+
+  <!-- network edges: hub spokes + heptagon ring (collaboration, not hierarchy) -->
+  <g fill="none" stroke-linecap="round">
+    <line x1="800" y1="450" x2="800" y2="90"   stroke="rgba(148,163,184,0.20)" stroke-width="1.6"/>
+    <line x1="800" y1="450" x2="1081" y2="226" stroke="rgba(148,163,184,0.20)" stroke-width="1.6"/>
+    <line x1="800" y1="450" x2="1151" y2="530" stroke="rgba(148,163,184,0.20)" stroke-width="1.6"/>
+    <line x1="800" y1="450" x2="956" y2="774"  stroke="rgba(148,163,184,0.20)" stroke-width="1.6"/>
+    <line x1="800" y1="450" x2="644" y2="774"  stroke="rgba(148,163,184,0.20)" stroke-width="1.6"/>
+    <line x1="800" y1="450" x2="449" y2="530"  stroke="rgba(148,163,184,0.20)" stroke-width="1.6"/>
+    <line x1="800" y1="450" x2="519" y2="226"  stroke="rgba(148,163,184,0.20)" stroke-width="1.6"/>
+    <line x1="800" y1="90"   x2="1081" y2="226" stroke="rgba(148,163,184,0.16)" stroke-width="1.2" stroke-dasharray="5 7"/>
+    <line x1="1081" y1="226" x2="1151" y2="530" stroke="rgba(148,163,184,0.16)" stroke-width="1.2" stroke-dasharray="5 7"/>
+    <line x1="1151" y1="530" x2="956" y2="774"  stroke="rgba(148,163,184,0.16)" stroke-width="1.2" stroke-dasharray="5 7"/>
+    <line x1="956" y1="774"  x2="644" y2="774"  stroke="rgba(148,163,184,0.16)" stroke-width="1.2" stroke-dasharray="5 7"/>
+    <line x1="644" y1="774"  x2="449" y2="530"  stroke="rgba(148,163,184,0.16)" stroke-width="1.2" stroke-dasharray="5 7"/>
+    <line x1="449" y1="530"  x2="519" y2="226"  stroke="rgba(148,163,184,0.16)" stroke-width="1.2" stroke-dasharray="5 7"/>
+    <line x1="519" y1="226"  x2="800" y2="90"   stroke="rgba(148,163,184,0.16)" stroke-width="1.2" stroke-dasharray="5 7"/>
+  </g>
+
+  <!-- ================= HUB ================= -->
+  <g>
+    <circle cx="800" cy="450" r="152" fill="none" stroke="url(#hubRing)" stroke-width="2" opacity="0.35"/>
+    <circle cx="800" cy="450" r="134" fill="url(#hubFill)" stroke="url(#hubRing)" stroke-width="3" filter="url(#glow)"/>
+    <text x="800" y="418" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="14" font-weight="700" fill="#a5b4fc" letter-spacing="6" text-anchor="middle">ONE TEAM</text>
+    <text x="800" y="452" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="25" font-weight="700" fill="#f8fafc" letter-spacing="3" text-anchor="middle">AGENTS OF</text>
+    <text x="800" y="484" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="25" font-weight="700" fill="#f8fafc" letter-spacing="4" text-anchor="middle">CHANGE</text>
+    <text x="800" y="522" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#94a3b8" text-anchor="middle">changing the way development works</text>
+  </g>
+
+  <!-- ================= MEMBERS ================= -->
+
+  <!-- Iris — Product Owner (top) -->
+  <g>
+    <rect x="680" y="10" width="240" height="160" rx="18" fill="rgba(52,168,83,0.08)" stroke="rgba(52,168,83,0.55)" stroke-width="1.6"/>
+    <circle cx="800" cy="58" r="32" fill="rgba(52,168,83,0.16)" stroke="rgba(52,168,83,0.45)"/>
+    <text class="emoji" x="800" y="58" text-anchor="middle" dominant-baseline="central">🌿</text>
+    <text class="name" x="800" y="110" text-anchor="middle">Iris</text>
+    <text class="role" x="800" y="134" text-anchor="middle">Product Owner</text>
+  </g>
+
+  <!-- Magnus — Scrum Master (upper-right) -->
+  <g>
+    <rect x="961" y="146" width="240" height="160" rx="18" fill="rgba(14,165,233,0.08)" stroke="rgba(14,165,233,0.55)" stroke-width="1.6"/>
+    <circle cx="1081" cy="194" r="32" fill="rgba(14,165,233,0.16)" stroke="rgba(14,165,233,0.45)"/>
+    <text class="emoji" x="1081" y="194" text-anchor="middle" dominant-baseline="central">🧭</text>
+    <text class="name" x="1081" y="246" text-anchor="middle">Magnus</text>
+    <text class="role" x="1081" y="270" text-anchor="middle">Scrum Master</text>
+  </g>
+
+  <!-- Nova — Backend Developer (right) -->
+  <g>
+    <rect x="1031" y="450" width="240" height="160" rx="18" fill="rgba(100,116,139,0.14)" stroke="rgba(148,163,184,0.55)" stroke-width="1.6"/>
+    <circle cx="1151" cy="498" r="32" fill="rgba(100,116,139,0.22)" stroke="rgba(148,163,184,0.5)"/>
+    <text class="emoji" x="1151" y="498" text-anchor="middle" dominant-baseline="central">⚙️</text>
+    <text class="name" x="1151" y="550" text-anchor="middle">Nova</text>
+    <text class="role" x="1151" y="574" text-anchor="middle">Backend Developer</text>
+  </g>
+
+  <!-- Marlowe — Principal Software Engineering Reviewer (lower-right) -->
+  <g>
+    <rect x="836" y="694" width="240" height="160" rx="18" fill="rgba(244,63,94,0.09)" stroke="rgba(244,63,94,0.55)" stroke-width="1.6"/>
+    <circle cx="956" cy="742" r="32" fill="rgba(244,63,94,0.16)" stroke="rgba(244,63,94,0.45)"/>
+    <text class="emoji" x="956" y="742" text-anchor="middle" dominant-baseline="central">🔍</text>
+    <text class="name" x="956" y="794" text-anchor="middle">Marlowe</text>
+    <text class="role" x="956" y="818" text-anchor="middle">Principal Reviewer</text>
+    <text class="role2" x="956" y="836" text-anchor="middle">Ship / No-Ship Gate</text>
+  </g>
+
+  <!-- Talia — Requirements Engineer Functional (lower-left) -->
+  <g>
+    <rect x="524" y="694" width="240" height="160" rx="18" fill="rgba(245,158,11,0.09)" stroke="rgba(245,158,11,0.55)" stroke-width="1.6"/>
+    <circle cx="644" cy="742" r="32" fill="rgba(245,158,11,0.16)" stroke="rgba(245,158,11,0.45)"/>
+    <text class="emoji" x="644" y="742" text-anchor="middle" dominant-baseline="central">📝</text>
+    <text class="name" x="644" y="794" text-anchor="middle">Talia</text>
+    <text class="role" x="644" y="818" text-anchor="middle">Requirements Engineer</text>
+    <text class="role2" x="644" y="836" text-anchor="middle">Functional</text>
+  </g>
+
+  <!-- Lux — Frontend Developer (left) -->
+  <g>
+    <rect x="329" y="450" width="240" height="160" rx="18" fill="rgba(139,92,246,0.10)" stroke="rgba(139,92,246,0.6)" stroke-width="1.6"/>
+    <circle cx="449" cy="498" r="32" fill="rgba(139,92,246,0.18)" stroke="rgba(139,92,246,0.5)"/>
+    <text class="emoji" x="449" y="498" text-anchor="middle" dominant-baseline="central">🎨</text>
+    <text class="name" x="449" y="550" text-anchor="middle">Lux</text>
+    <text class="role" x="449" y="574" text-anchor="middle">Frontend Developer</text>
+  </g>
+
+  <!-- Orion — Solution Architect (upper-left) -->
+  <g>
+    <rect x="399" y="146" width="240" height="160" rx="18" fill="rgba(20,184,166,0.09)" stroke="rgba(45,212,191,0.55)" stroke-width="1.6"/>
+    <circle cx="519" cy="194" r="32" fill="rgba(20,184,166,0.16)" stroke="rgba(45,212,191,0.45)"/>
+    <text class="emoji" x="519" y="194" text-anchor="middle" dominant-baseline="central">📐</text>
+    <text class="name" x="519" y="246" text-anchor="middle">Orion</text>
+    <text class="role" x="519" y="270" text-anchor="middle">Solution Architect</text>
+  </g>
+</svg>
